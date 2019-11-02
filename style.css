@@ -1,36 +1,13 @@
-#box,
-#box2,
-#box3,
-#box4,
-#box5,
-#box6,
-#box7,
-#box8,
-#box9,
-#box10,
-#box11,
-#box12,
-#box13,
-#box14,
-#box15,
-#box16,
-#box17,
-#box18,
-#box19,
-#box20,
-#box21,
-#box22,
-#box23,
-#box24,
-#box25,
-#box26,
-#box27,
-#box28,
-#box29 {
+*{
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
   width: 250px;
   height: 250px;
   background-color: #ededed;
-  margin: 9px;
+  margin: 10.9px;
   position: relative;
   float: left;
   border-radius: 10px;
@@ -44,14 +21,15 @@
   top: 30px;
   left: 30px;
 }
-#line {
+#ring::before {
+  content: '';
   width: 15px;
   height: 100px;
   background-color: red;
   transform: rotate(-55deg);
   position: absolute;
-  top: 112px;
-  left: 174px;
+  top: 70px;
+  left: 130px;
 }
 #rec {
   width: 150px;
@@ -102,14 +80,15 @@
   margin: 0 auto;
   transform: translateY(75px);
 }
-#tri {
+#rec2::before {
+  content: '';
   box-sizing: border-box;
   width: 150px;
   height: 20px;
   background-color: red;
   position: absolute;
-  top: 155px;
-  left: 50px;
+  top: 100px;
+  left: 0px;
   border-left: 75px solid transparent;
   border-right: 75px solid transparent;
   border-bottom: 20px solid #ededed;
@@ -649,10 +628,10 @@
   margin: 0 auto;
   transform: translateY(75px);
 }
-#box29 div:nth-child(1),
-#box29 div:nth-child(2),
-#box29 div:nth-child(3),
-#box29 div:nth-child(4) {
+li:nth-child(29) div:nth-child(1),
+li:nth-child(29) div:nth-child(2),
+li:nth-child(29) div:nth-child(3),
+li:nth-child(29) div:nth-child(4) {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -663,15 +642,15 @@
   animation: loop 2s ease infinite;
   animation-delay: 0s;
 }
-#box29 div:nth-child(2) {
+li:nth-child(29) div:nth-child(2) {
   background-color: red;
   animation-delay: -0.5s;
 }
-#box29 div:nth-child(3) {
+li:nth-child(29) div:nth-child(3) {
   background-color: yellow;
   animation-delay: -1s;
 }
-#box29 div:nth-child(4) {
+li:nth-child(29) div:nth-child(4) {
   background-color: pink;
   animation-delay: -1.5s;
 }
